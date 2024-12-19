@@ -13,9 +13,6 @@ class DatabaseSessionManager:
 
     def __init__(self):
         self.engines = {
-            "FLIP": create_async_engine(str(settings.FLIP_DB)),
-            "RESUME": create_async_engine(str(settings.RESUME_DB)),
-            "RECRUIT": create_async_engine(str(settings.RECRUIT_DB)),
             "SYSTEM": create_async_engine(str(settings.SYSTEM_DB)),
         }
 
