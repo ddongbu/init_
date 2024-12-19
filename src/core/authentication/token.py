@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import jwt
 
 
-class VdreamToken:
+class Token:
     def __init__(self, **kwargs):
         self.secret_key = kwargs.get("JWT_SECRET_KEY")
         self.algorithm = kwargs.get("JWT_ALGORITHM")
